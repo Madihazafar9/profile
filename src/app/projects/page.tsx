@@ -8,7 +8,7 @@ const projects = [
     title: "Portfolio Website",
     description: "Personal portfolio built with Next.js and Tailwind CSS.",
     tech: "Next.js, TypeScript, Tailwind",
-    github: "https://github.com/Madihazafar9/portfolio.git",
+    github: "https://github.com/Madihazafar9/profile.git",
   },
   {
     id: "2",
