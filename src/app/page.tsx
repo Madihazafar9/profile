@@ -1,65 +1,244 @@
+// app/page.tsx
 import Image from "next/image";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import SkillCard from "../components/SkillCard";
+import ProjectCard from "../components/ProjectCard";
 
-export default function Home() {
+const skills = [
+  "React",
+  "Next.js",
+  "TypeScript",
+  "Tailwind CSS",
+  "Node.js",
+  "APIs",
+  "Databases",
+  "LLMs",
+  "n8n",
+  "SerpAPI",
+];
+
+const projects = [
+  {
+    title: "AI Content Generator",
+    description: "Generates AI content using LLM and SerpAPI.",
+    tech: "Next.js | TypeScript | n8n | AI",
+    github: "https://github.com/username/ai-generator",
+    demo: "#",
+  },
+  {
+    title: "E-Commerce Website",
+    description: "Fully responsive e-commerce platform.",
+    tech: "Next.js | TypeScript | Tailwind CSS",
+    github: "https://github.com/username/ecommerce",
+    demo: "#",
+  },
+  {
+    title: "Chatbot App",
+    description: "AI chatbot integrated with OpenAI API.",
+    tech: "React | TypeScript | Node.js | LLM",
+    github: "https://github.com/username/chatbot",
+    demo: "#",
+  },
+];
+
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <>
+      <Navbar />
+
+      <main className="pt-24 bg-gray-950 text-white">
+        {/* ================= HOME ================= */}
+        <section
+          id="home"
+          className="relative h-[120vh] flex items-center px-8 overflow-hidden"
+        >
+          <Image
+            src="/home3.jpeg"
+            alt="Home Background"
+            fill
+            className="object-cover"
+            priority
+          />
+
+          <div className="absolute inset-0 bg-black/70" />
+
+          <div className="relative z-10 max-w-2xl">
+            <h1 className="text-4xl md:text-6xl font-bold">
+              Hi, I'm Madiha ZAFER
+            </h1>
+
+            <p className="text-xl md:text-2xl text-gray-300 mt-3">
+              AI Engineer | Full-Stack Developer
+            </p>
+
+            <p className="max-w-lg text-gray-400 mt-4">
+              I build intelligent, scalable, and modern web solutions with AI
+              integration.
+            </p>
+
+            <div className="mt-6">
+              <a
+                href="#projects"
+                className="px-6 py-3 bg-cyan-400 text-black rounded-lg hover:bg-cyan-300 transition"
+              >
+                View Projects
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* ================= ABOUT ================= */}
+        <section
+          id="about"
+          className="my-24 px-8 flex flex-col md:flex-row items-center gap-10"
+        >
+          <div className="md:w-1/2">
+            <h2 className="text-3xl font-bold mb-6">About Me</h2>
+            <p className="text-gray-400 leading-relaxed space-y-4">
+              I am an AI Engineer and Full-Stack Developer passionate about
+              building intelligent and scalable web applications. I specialize
+              in AI and automation, leveraging modern technologies to create
+              smart solutions for real-world problems.
+              <br />
+              <br />
+              I have hands-on experience with n8n, Next.js, TypeScript, and
+              Tailwind CSS, enabling me to develop modern front-end interfaces
+              and robust back-end systems.
+              <br />
+              <br />
+              My goal is to turn complex ideas into real-world solutions that
+              empower users and businesses.
+            </p>
+          </div>
+
+          <div className="md:w-1/2 flex justify-end">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src="/img1.jpg"
+              alt="About Image"
+              width={450}
+              height={350}
+              className="rounded-xl shadow-lg"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+          </div>
+        </section>
+
+        {/* ================= SKILLS ================= */}
+        <section id="skills" className="my-24 px-8">
+          <h2 className="text-3xl font-bold mb-6">Skills</h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {skills.map((skill, index) => (
+              <SkillCard key={index} skill={skill} />
+            ))}
+          </div>
+        </section>
+
+        {/* ================= PROJECTS ================= */}
+        <section id="projects" className="my-24 px-8">
+          <h2 className="text-3xl font-bold mb-6">Projects</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {projects.map((project, index) => (
+              <ProjectCard key={index} {...project} />
+            ))}
+          </div>
+        </section>
+
+        {/* ================= CONTACT ================= */}
+        <section
+          id="contact"
+          className="my-24 px-8 flex flex-col md:flex-row items-center gap-10"
+        >
+          <div className="md:w-1/2 flex justify-start">
+            <Image
+              src="/img.jpeg"
+              alt="Contact Image"
+              width={450}
+              height={350}
+              className="rounded-xl shadow-lg"
+            />
+          </div>
+
+          <div className="md:w-1/2">
+            <h2 className="text-3xl font-bold mb-4">Contact Me</h2>
+
+            <p className="text-gray-400 mb-6">
+              Have a project in mind or want to collaborate? I’m always open to
+              discussing new ideas and opportunities.
+            </p>
+
+            <h3 className="text-2xl font-semibold mb-4">
+              You can reach me via email or social links below:
+            </h3>
+
+            <ul className="text-cyan-400 flex flex-col gap-3 text-lg mb-6">
+              <li>Email: madihazafer9@gmail.com</li>
+
+              <li>
+                <a
+                  href="https://github.com/Madihazafar9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  GitHub
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/madiha-zafar-600137397/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  LinkedIn
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://vercel.com/madihas-projects-bb9b0baf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  Vercel
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com/thetechlady99/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  Instagram
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61582893073077"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  Facebook
+                </a>
+              </li>
+            </ul>
+
+            <button className="px-6 py-3 bg-cyan-400 text-black rounded hover:bg-cyan-300 transition">
+              Get in Touch
+            </button>
+          </div>
+        </section>
       </main>
-    </div>
+
+      <Footer />
+    </>
   );
 }
