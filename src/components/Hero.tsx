@@ -12,7 +12,7 @@ export default function Hero() {
         playsInline
         className="absolute w-full h-full object-cover"
       >
-        <source src="/hero.mp4" type="video/mp4" />
+        <source src="/1.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay */}
