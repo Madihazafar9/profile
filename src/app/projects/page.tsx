@@ -9,7 +9,7 @@ const projects = [
     description: "Personal portfolio built with Next.js and Tailwind CSS.",
     tech: "Next.js, TypeScript, Tailwind",
     github: "https://github.com/Madihazafar9/1-portfolio-website.git",
-    vercel:"https://1-portfolio-website-one.vercel.app/"//vercel.com/new/madihas-projects-bb9b0baf/success?auto-redirect=true&developer-id=&external-id=&redirect-url=&branch=main&deploymentUrl=1-portfolio-website-h5kqf427z-madihas-projects-bb9b0baf.vercel.app&projectName=1-portfolio-website&s=https%3A%2F%2Fgithub.com%2FMadihazafar9%2F1-portfolio-website&gitOrgLimit=&hasTrialAvailable=1&totalProjects=1&flow-id=XVmNQ7ikoXOJLM7PVC1vm  },
+    demo:"https://1-portfolio-website-one.vercel.app/"//vercel.com/new/madihas-projects-bb9b0baf/success?auto-redirect=true&developer-id=&external-id=&redirect-url=&branch=main&deploymentUrl=1-portfolio-website-h5kqf427z-madihas-projects-bb9b0baf.vercel.app&projectName=1-portfolio-website&s=https%3A%2F%2Fgithub.com%2FMadihazafar9%2F1-portfolio-website&gitOrgLimit=&hasTrialAvailable=1&totalProjects=1&flow-id=XVmNQ7ikoXOJLM7PVC1vm  },
   },
     {
     id: "2",
@@ -17,7 +17,7 @@ const projects = [
     description: "AI powered chat application using OpenAI API.",
     tech: "Next.js, TypeScript, Tailwind",
     github: "https://github.com/Madihazafar9/madiha-gpt.git",
-    vercel:"https://madiha-gpt-cmvs.vercel.app/"
+    demo:"https://madiha-gpt-cmvs.vercel.app/"
   },
   {
     id: "3",
@@ -25,7 +25,7 @@ const projects = [
     description: "Full stack e-commerce app with cart and checkout.",
     tech: "Next.js, NeonDB, Tailwind CSS ,TypeScript",
     github: "https://github.com/Madihazafar9/e-commerce-store.git",
-      vercel:"https://e-commerce-store-two-olive.vercel.app/"
+      demo:"https://e-commerce-store-two-olive.vercel.app/"
   },
   {
     id: "4",
@@ -33,7 +33,7 @@ const projects = [
     description: "Full Stack sticker store built with Next.js and Tailwind CSS.",
     tech: "Next.js, TypeScript, Tailwind",
     github: "https://github.com/Madihazafar9/sticker.git",
-    
+    demo: "https://sticker-two-olive.vercel.app/"
   },
   {
     id: "5",
@@ -41,6 +41,7 @@ const projects = [
     description: "AI automation workflow using n8n and SerpAPI.",
     tech: "n8n,typescript ,SerpAPI,next.js, tailwind css.",
     github: "https://github.com/Madihazafar9/e-lalian.git",
+    demo: "https://e-lalian.vercel.app/"
   },
    {
     id: "6",
@@ -48,6 +49,7 @@ const projects = [
     description: "a store with database and authentication built with next.js and tailwind css.",
     tech: "",
     github: "https://github.com/Madihazafar9/ecom-lalian.git",
+    demo: "https://ecom-lalian.vercel.app/"
   },
  
 ];

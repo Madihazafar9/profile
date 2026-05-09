@@ -27,12 +27,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           GitHub
         </a>
 
-        {demo && (
-          <a href={demo} target="_blank" className="underline">
-            Live Demo
-          </a>
-        )}
+        
       </div>
+      
     </div>
   );
 };
