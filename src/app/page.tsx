@@ -10,10 +10,8 @@ const skills = [
   "Next.js",
   "TypeScript",
   "Tailwind CSS",
-  "Node.js",
   "APIs",
   "Databases",
-  "LLMs",
   "n8n",
   "SerpAPI",
 ];
@@ -54,7 +52,7 @@ export default function HomePage() {
           className="relative h-[120vh] flex items-center px-8 overflow-hidden"
         >
           <Image
-            src="/home3.jpeg"
+            src="/home.jpeg"
             alt="Home Background"
             fill
             className="object-cover"
