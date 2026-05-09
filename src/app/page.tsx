@@ -210,7 +210,7 @@ export default function HomePage() {
 
               <li>
                 <a
-                  href="https://www.instagram.com/thetechlady99/"
+                  href="https://www.instagram.com/malikmadiha04/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline"

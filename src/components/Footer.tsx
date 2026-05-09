@@ -29,7 +29,7 @@ const Footer = () => {
         </a>
 
         <a
-          href="https://www.instagram.com/thetechlady99/"
+          href="https://www.instagram.com/malikmadiha04/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-white transition"
@@ -45,23 +45,7 @@ const Footer = () => {
                   Facebook
                 </a>
               </li>
-        <a
-          href="https://www.upwork.com/freelancers/~yourid"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-white transition"
-        >
-          Upwork
-        </a>
 
-        <a
-          href="https://pro.fiverr.com/?source=top_nav"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-white transition"
-        >
-          Fiverr
-        </a>
 
         <a
           href="https://www.linkedin.com/in/madiha-zafar-600137397/"

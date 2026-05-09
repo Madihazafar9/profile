@@ -8,7 +8,7 @@ const projects = [
     title: "Portfolio Website",
     description: "Personal portfolio built with Next.js and Tailwind CSS.",
     tech: "Next.js, TypeScript, Tailwind",
-    github: "https://github.com/Madihazafar9/profile.git",
+    github: "https://github.com/Madihazafar9/1-portfolio-website.git",
   },
   {
     id: "2",
@@ -21,52 +21,33 @@ const projects = [
     id: "3",
     title: "E-Commerce Store",
     description: "Full stack e-commerce app with cart and checkout.",
-    tech: "Next.js, MongoDB, Stripe",
-    github: "https://github.com/Madihazafar9/skin-care.git",
+    tech: "Next.js, NeonDB, Tailwind CSS ,TypeScript",
+    github: "https://github.com/Madihazafar9/e-commerce-store.git",
 
   },
   {
     id: "4",
-    title: "Project",
-    description: "Is project ka short description",
+    title: "Sticker Store",
+    description: "Full Stack sticker store built with Next.js and Tailwind CSS.",
     tech: "Next.js, TypeScript, Tailwind",
-    github: "https://github.com/Madihazafar9/madiha.git",
+    github: "https://github.com/Madihazafar9/sticker.git",
     
   },
   {
     id: "5",
-    title: "Project",
-    description: "Another project description",
-    tech: "React, Firebase",
-    github: "https://github.com/Madihazafar9/madiha1.git",
+    title: "AI Automation workflow",
+    description: "AI automation workflow using n8n and SerpAPI.",
+    tech: "n8n,typescript ,SerpAPI,next.js, tailwind css.",
+    github: "https://github.com/Madihazafar9/e-lalian.git",
   },
    {
     id: "6",
-    title: "Project",
-    description: "Yet another project description",
+    title: "E-Commerece store",
+    description: "a store with database and authentication built with next.js and tailwind css.",
     tech: "",
-    github: "https://github.com/yourname/another-project",
+    github: "https://github.com/Madihazafar9/ecom-lalian.git",
   },
-   {
-    id: "7",
-    title: "Project",
-    description: "Third project description",
-    tech: "React, Firebase",
-    github: "https://github.com/Madihazafar9/madiha4.git",
-  },
-   {
-    id: "8",
-    title: "Project",
-    description: "Fourth project description",
-    tech: "React, Firebase",
-    github: "https://github.com/Madihazafar9/my-web.git",
-  },  {
-    id: "9",
-    title: "Project",
-    description: "Another project description",
-    tech: "React, Firebase",
-    github: "https://github.com/Madihazafar9/new1.git",
-  },
+ 
 ];
 
 const ProjectsPage = () => {

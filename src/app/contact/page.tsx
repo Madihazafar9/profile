@@ -57,7 +57,7 @@ const ContactPage = () => {
 
               <li>
                 <a
-                  href="https://www.instagram.com/thetechlady99/"
+                  href="https://www.instagram.com/malikmadiha04/"
                   target="_blank"
                   className="hover:underline"
                 >
