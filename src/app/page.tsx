@@ -52,7 +52,7 @@ export default function HomePage() {
           className="relative h-[120vh] flex items-center px-8 overflow-hidden"
         >
           <Image
-            src="/home.jpeg"
+            src="/home.png"
             alt="Home Background"
             fill
             className="object-cover"
